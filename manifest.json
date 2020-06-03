@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json.schemastore.org/foxx-manifest",
+  "main": "dist/entry.js",
+  "engines": {
+    "arangodb": "^3.0.0"
+  },
+  "name": "rss-deamon",
+  "version": "0.1.0",
+  "tests": "test/**/*.js"
+}
