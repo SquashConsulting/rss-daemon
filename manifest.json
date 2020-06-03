@@ -4,7 +4,24 @@
   "engines": {
     "arangodb": "^3.0.0"
   },
+  "scripts": {
+    "setup": "dist/scripts/setup.js",
+    "create-job": "dist/scripts/createJob.js",
+    "update-feed": "dist/scripts/updateFeed.js"
+  },
   "name": "rss-daemon",
   "version": "0.1.0",
-  "tests": "test/**/*.js"
+  "tests": "test/**/*.js",
+  "configuration": {
+    "QUEUE_NAME": {
+      "type": "string",
+      "default": "daemon",
+      "description": "Feeds queue"
+    },
+    "MOUNT_PATH": {
+      "type": "string",
+      "default": "/daemon",
+      "description": "Mount Path"
+    }
+  }
 }

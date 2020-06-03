@@ -1,12 +1,16 @@
 {
-  "name": "rss-daeomn",
+  "name": "rss-daemon",
   "version": "0.0.0",
   "description": "RSS Daemon Service",
   "main": "dist/entry.js",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "preinstall:service": "npm run build",
+    "preupgrade:service": "npm run build",
+    "install:service": "foxx install /daemon --database rss --server dev",
+    "upgrade:service": "foxx upgrade /daemon --database rss --server dev"
   },
   "devDependencies": {
     "@types/arangodb": "^3.5.3",
