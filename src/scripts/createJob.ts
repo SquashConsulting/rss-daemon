@@ -7,6 +7,6 @@ const { QUEUE_NAME, MOUNT_PATH } = module.context.configuration;
 const QUEUE = queues.get(QUEUE_NAME);
 
 QUEUE.push({ mount: MOUNT_PATH, name: 'update-feed' }, feed, {
+  repeatTimes: 3,
   repeatDelay: 5 * 1000,
-  repeatTimes: Infinity,
 });
