@@ -1,4 +1,4 @@
-# Foxx TypeScript Service Template
+# Daemon Service For Recurrent RSS Feed Updates
 
 ### Install packages
 
@@ -8,4 +8,12 @@ npm install
 
 ### Install/Upgrade Foxx Service
 
-In order to use the typescript service in ArangoDB, you need to run `npm run build` and then do `foxx {install,upgrade} <mount> --server <server_name> --database <db_name>`
+- `npm run install:service` - installs the service
+- `npm run upgrade:service` - upgrades the service
+
+### Configuration
+
+`manifest.json` defines two configurable variables:
+
+- `QUEUE_NAME` - The name used for the job queue (defaults to: `daemon`).
+- `MOUNT_PATH` - The mount path used for the installed service (defaults to `/daemon`).
