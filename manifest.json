@@ -4,7 +4,7 @@
   "engines": {
     "arangodb": "^3.0.0"
   },
-  "name": "rss-deamon",
+  "name": "rss-daemon",
   "version": "0.1.0",
   "tests": "test/**/*.js"
 }

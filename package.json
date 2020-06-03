@@ -1,7 +1,7 @@
 {
-  "name": "rss-deaomn",
+  "name": "rss-daeomn",
   "version": "0.0.0",
-  "description": "RSS Deamong Service",
+  "description": "RSS Daemon Service",
   "main": "dist/entry.js",
   "license": "MIT",
   "private": true,
