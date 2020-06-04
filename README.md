@@ -17,3 +17,6 @@ npm install
 
 - `QUEUE_NAME` - The name used for the job queue (defaults to: `daemon`).
 - `MOUNT_PATH` - The mount path used for the installed service (defaults to `/daemon`).
+- `BACKEND_URL` - The backend server path (defaults to `http://localhost:4000`).
+
+These variables can be changes inside ArangoDB WebView.

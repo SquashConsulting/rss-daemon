@@ -22,6 +22,11 @@
       "type": "string",
       "default": "/daemon",
       "description": "Mount Path"
+    },
+    "BACKEND_URL": {
+      "type": "string",
+      "default": "http://localhost:4000",
+      "description": "Backend Server URL"
     }
   }
 }
